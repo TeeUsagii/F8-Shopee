@@ -42,8 +42,7 @@
 }
 
 .header__navbar-item:hover,
-.header__navbar-icon-link:hover
-.header__navbar-item-link:hover {
+.header__navbar-icon-link:hover .header__navbar-item-link:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7);
 }
@@ -84,7 +83,7 @@
     background-color: var(--white-color);
     position: absolute;
     left: 0;
-    top: 118%; 
+    top: 118%;
     padding: 8px;
     border-radius: 2px;
     display: none;
@@ -110,15 +109,95 @@
     justify-content: space-between;
 }
 
-.header__qr-link:nth-child(1){
+.header__qr-link:nth-child(1) {
     margin-left: 11px;
 }
 
-.header__qr-link:nth-child(2){
+.header__qr-link:nth-child(2) {
     margin-left: 5px;
     margin-right: 10px;
 }
 
 .header__qr-download-img {
     height: 16px;
+}
+
+/* Header notification */
+.header__notify {
+    position: absolute;
+    top: 118%;
+    right: 0;
+    width: 404px;
+    border: 1px solid #D3D3D3;
+    background-color: var(--white-color);
+}
+
+.header__notify-header {
+    height: 40px;
+    background-color: var(--white-color);
+}
+
+.header__notify-header h3 {
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 40px;
+}
+
+.header__notify-list {
+    padding-left: 0;
+}
+
+.header__notify-item {
+    display: flex;
+}
+
+.header__notify-item:hover {
+    background-color: #f1f1f1;
+}
+.header__notify-item--viewed {
+    background-color: rgba(238, 75, 43, 0.1);
+}
+
+.header__notify-link {
+    display: flex;
+    width: 100%;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.header__notify-img {
+    width: 48px;
+    object-fit: contain;
+}
+
+.header__notify-info {
+    margin: 12px;
+}
+
+.header__notify-name {
+    display: block;
+    font-size: 14px; 
+    color: var(--black-color);
+    font-weight: 400;
+}
+
+.header__notify-descriotion {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #756f6e;
+}
+
+.header__notify-footer {
+    /* display: block; */
+    text-align: center;
+    padding: 16px;
+}
+
+.header__notify-footer-btn {
+    text-decoration: none;
+    color: var(--text-color);
+    /* padding: 4px 16px; */
 }
