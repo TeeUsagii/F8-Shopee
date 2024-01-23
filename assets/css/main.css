@@ -46,10 +46,13 @@
 }
 
 .header__navbar-item:hover,
-.header__navbar-icon-link:hover .header__navbar-item-link:hover {
+.header__navbar-icon-link:hover .header__navbar-item-link:hover,
+.header__navbar-item:hover .header__navbar-item-link:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7);
 }
+
+
 
 .header__navbar-item--strong {
     font-weight: 400;
@@ -63,7 +66,9 @@
     height: 16px;
     right: -9px;
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
 }
 
 .header__navbar-icon-link {
@@ -91,6 +96,8 @@
     padding: 8px;
     border-radius: 2px;
     display: none;
+    animation: fadeIn ease-in .3s;
+    -webkit-animation: fadeIn ease-in .3s;
     animation: fadeIn ease-in .3s;
 }
 
@@ -137,6 +144,8 @@
     cursor: default;
     transform-origin: calc(100% - 20px) top;
     animation: headerNotifyGrowth ease-in 0.2s;
+    -webkit-animation: headerNotifyGrowth ease-in 0.2s;
+    will-change: opacity, transform;
     display: none;
 }
 
