@@ -23,6 +23,8 @@ html {
     box-sizing: border-box;
 }
 
+/* Reponsive */
+
 .grid {
     width: 1200px;
     max-width: 100%;
@@ -31,6 +33,11 @@ html {
 
 .grid__full-width {
     width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .grid__row {
