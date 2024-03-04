@@ -154,6 +154,8 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.02);
+
 }
 
 .select-input__label {
@@ -167,11 +169,30 @@ html {
     top: 1px;
 }
 
+.select-input:hover .select-input__list {
+    display: block;
+}
+
 .select-input__list {
     position: absolute;
     left: 0;
     right: 0;
-    top: 100%;
+    top: 25px;
     border-radius: 2px;
     background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    display: none;
+}
+
+.select-input__link {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding: 6px 0;
+}
+
+.select-input__link:hover {
+    color: var(--primary-color);
 }
