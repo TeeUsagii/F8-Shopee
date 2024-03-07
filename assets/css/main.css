@@ -1133,25 +1133,48 @@ i.home-product-item__like-icon-fill {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -2px;
+    bottom: -3px;
     border-top: 3px solid currentColor;
     border-left: 3px solid transparent;
     filter: brightness(60%);
 }
 
 .home-product-item__favourite i {
+    color: var(--white-color);
     font-size: 0.9rem;
     margin: 0 2px 0 5px;
 }
 
 .home-product-item__sale-off {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    background-color: rgba(255, 216, 64, .94);
+}
 
+.home-product-item__sale-off::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    border-width: 0 20px 4px;
+    border-style: solid;
+    color: rgba(255, 216, 64, .94);
+    border-color: transparent currentColor transparent currentColor;
 }
 
 .home-product-item__sale-off-percent {
-
+    color: #EE4D2D;
+    font-weight: 600;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
 }
 
 .home-product-item__sale-off-label {
-
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
 }
