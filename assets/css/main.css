@@ -6,7 +6,7 @@
 .header__navbar {
     display: flex;
     justify-content: space-between;
-    margin: 0 36px;
+    margin: 0;
 }
 
 .header__navbar-list {
@@ -486,7 +486,7 @@
     height: var(--header-with-search-height);
     display: flex;
     align-items: center;
-    margin: 0 36px;
+    margin: 0px;
 }
 
 .header__logo {
@@ -872,7 +872,7 @@
 }
 
 .app__content {
-   padding: 36px;
+   padding-top: 36px;
 }
 
 .category {
@@ -1039,6 +1039,7 @@
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
+    margin-top: 2px;
 }
 
 .home-product-item__price-old {
@@ -1097,10 +1098,11 @@ i.home-product-item__like-icon-fill {
 
 .home-product-item__origin {
     display: flex;
-    margin: 3px 10px 0;
+    margin: 6px 10px 0;
     color: #595959;
     font-size: 1.2rem;
     font-weight: 300;
+    padding-bottom: 6px;
 }
 
 .home-product-item__brand {
