@@ -1252,7 +1252,11 @@ i.home-product-item__like-icon-fill {
     width: 80px;
     height: 80px;
     object-fit: contain;
-    border: 1px solid var(--border-color);
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 2px;
+    margin: 4px;
 }
 
 .footer__dowload-apps {
@@ -1260,15 +1264,23 @@ i.home-product-item__like-icon-fill {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .footer__dowload-app-img {
-    height: 16px;
+    height: 20px;
 }
 
 .footer__dowload-apps-link {
+    display: flex;
     text-decoration: none;
+    padding: 8px;
+    background-color: var(--white-color);
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    border-radius: 2px;
+    justify-content: center;
+    margin-right: 15px;
 }
 
 .footer__banking-1 {
@@ -1278,6 +1290,14 @@ i.home-product-item__like-icon-fill {
 
 .footer__banking-2 {
     width: 575%;
+}
+
+.footer__banking-img {
+    box-shadow: 0 1px 1px rgba(0,0,0,.2);
+    box-sizing: border-box;
+    padding: 4px;
+    border-radius: 2px;
+    margin: 4px;
 }
 
 .footer__cerf {
