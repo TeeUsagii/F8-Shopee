@@ -1131,10 +1131,6 @@ i.home-product-item__like-icon-fill {
     padding-bottom: 6px;
 }
 
-.home-product-item__brand {
-
-}
-
 .home-product-item__origin-name {
     margin-left: auto;
 }
@@ -1232,11 +1228,57 @@ i.home-product-item__like-icon-fill {
 .footer-item__link {
     text-decoration: none;
     font-size: 1.2rem;
-    color: #666;
-    display: block;
+    color: #737373;
     margin-top: 12px;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
 }
 
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer-item__icon {
+    font-size: 1.6rem;
+    margin: -1px 8px 0 0;
+}
+
+.footer__dowload {
+    display: flex;
+}
+
+.footer__dowload-qr {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+}
+
+.footer__dowload-apps {
+    flex: 1;
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__dowload-app-img {
+    height: 16px;
+}
+
+.footer__dowload-apps-link {
+    text-decoration: none;
+}
+
+.footer__banking-1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__banking-2 {
+    width: 575%;
+}
 
 .footer__cerf {
     padding-top: 44px;
