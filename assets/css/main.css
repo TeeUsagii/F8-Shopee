@@ -1089,6 +1089,7 @@
 
 .home-product-item__like {
     font-size: 1.3rem;
+    color: #F63D30;
 }
 
 i.home-product-item__like-icon-fill {
@@ -1383,4 +1384,8 @@ i.home-product-item__like-icon-fill {
     line-height: 2;
     font-size: 1.3rem;
     font-weight: 300;
+}
+
+.footer__company-nmt {
+    text-decoration: none;
 }
