@@ -1214,8 +1214,29 @@ i.home-product-item__like-icon-fill {
 
 /* footer */
 .footer {
-
+    padding-top: 12px;
+    border-top: 4px solid var(--primary-color);
 }
+
+.footer__heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer-list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #666;
+    display: block;
+    margin-top: 12px;
+}
+
 
 .footer__cerf {
     padding-top: 44px;
@@ -1241,14 +1262,14 @@ i.home-product-item__like-icon-fill {
     position: relative;
     color: var(--text-color);
     text-decoration: none;
-    margin-left: 11px;
+    margin-left: 12px;
 }
 
 .footer__country-separate::after {
     content: "";
     display: block;
     position: absolute;
-    border-left: 1px solid;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
     height: 16px;
     right: -6px;
     top: 50%;
@@ -1279,7 +1300,7 @@ i.home-product-item__like-icon-fill {
     content: "";
     display: block;
     position: absolute;
-    border-left: 1px solid;
+    border-left: 1px solid rgba(0, 0, 0, 0.1); 
     height: 16px;
     right: -30px;
     top: 50%;
