@@ -1214,6 +1214,10 @@ i.home-product-item__like-icon-fill {
     border-top: 4px solid var(--primary-color);
 }
 
+.footer-padding {
+    padding-bottom: 20px;
+}
+
 .footer__heading {
     font-size: 1.4rem;
     text-transform: uppercase;
