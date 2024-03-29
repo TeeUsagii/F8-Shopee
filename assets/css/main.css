@@ -543,6 +543,7 @@
     display: inline-block;
     padding: 0 12px;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__cart-icon {
@@ -917,6 +918,10 @@
     flex: 1;
 }
 
+.header__sort-bar .header__sort-item--active {
+    border-bottom: 1px solid var(--primary-color);
+}
+
 .header__sort-link {
     text-decoration: none;
     color: var(--text-color);
@@ -1008,6 +1013,61 @@
 
 .category-item__link:hover {
     color: var(--primary-color);
+}
+
+/* Mobile category */
+
+.mobile-category {
+
+}
+
+.mobile-category__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category__item {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.mobile-category__item:nth-last-of-type(3n + 1) .mobile-category__link {
+    background-color: #7da6d1;
+}
+
+.mobile-category__item:nth-last-of-type(3n + 2) .mobile-category__link {
+    background-color: #6ac2b7;
+}
+
+.mobile-category__item:nth-last-of-type(3n + 3) .mobile-category__link {
+    background-color: #73c273;
+}
+
+.mobile-category__link {
+    --line-height: 2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: var(--line-height);
+    text-align: center;
+    width: 110px;
+    height: calc(var(--line-height) * 2);
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    border-radius: 4px;
+    font-weight: 300;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 /* home sort + filter */
@@ -1185,7 +1245,8 @@ i.home-product-item__like-icon-fill {
 }
 
 .home-product-item__sold {
-    font-size: 1.2rem;
+    --line-height: 1.2rem;
+    font-size: var(--line-height);
     color: var(--text-color);
     margin-left: 6px;
 }
@@ -1334,7 +1395,6 @@ i.home-product-item__like-icon-fill {
 
 .footer__dowload-apps {
     flex: 1;
-    margin-left: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1436,7 +1496,7 @@ i.home-product-item__like-icon-fill {
     display: block;
     position: absolute;
     border-left: 1px solid rgba(0, 0, 0, 0.1); 
-    height: 16px;
+    height: 100%;
     right: -30px;
     top: 50%;
     transform: translateY(-50%);

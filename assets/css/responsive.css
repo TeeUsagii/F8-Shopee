@@ -37,6 +37,11 @@
     .header__sort-bar {
         display: flex;
     }
+
+    .app__content {
+        padding-top: 8px;
+    }
+    
 }
 
 /* Tablet */
@@ -48,6 +53,10 @@
     .header__cart {
         width: 80px;
         text-align: right;
+    }
+
+    .footer__security-link {
+        font-size: 1rem;
     }
 }
 
@@ -61,9 +70,17 @@
         justify-content: space-between;
     }
 
-    .header-cart,
-    .header-logo {
+    .header__cart,
+    .header__logo {
         width: unset;
+    }
+
+    .header__cart {
+        margin-right: 12px;
+    }
+
+    .header__logo {
+        margin-left: 12px;
     }
 
     .header__search {
@@ -101,6 +118,38 @@
         margin: 0 4px;
     }
 
+    .footer-content {
+        padding: 0 8px;
+    }
+
+    .footer__cerf {
+        justify-content: center;
+    }
+
+    .footer__cerf-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer__country {
+        text-align: center;
+        margin-top: 6px;
+    }
+
+    .footer__copyright-security {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__security-link-separate::after {
+        display: none;
+    }
+
+    .footer__security-link {
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
 
     @keyframes mobileSearchSideIn {
         from {
