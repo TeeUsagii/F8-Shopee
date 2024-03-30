@@ -1,9 +1,5 @@
 /* Mobile and Tablet */
 @media (max-width: 1023px) {
-    :root {
-        --header-height: 68px;
-        --navbar-height: 0px;
-    }
 
     .hide-on-mobile-tablet {
         display: none;
@@ -54,6 +50,12 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+
+    :root {
+        --header-height: 68px;
+        --navbar-height: 0px;
+    }
+
     .hide-on-tablet {
         display: none;
     }
@@ -70,6 +72,12 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+
+    :root {
+        --header-height: 54px;
+        --navbar-height: 0px;
+    }
+
     .hide-on-mobile {
         display: none;
     }
@@ -150,6 +158,22 @@
         padding: 0 10px;
     }
 
+    .footer__heading {
+        text-align: center;
+    }
+
+    .footer__banking {
+        text-align: center;
+    }
+
+    .footer-item {
+        margin: 0;
+    }
+
+    .footer-item__link {
+        justify-content: center;
+    }
+
     .footer__cerf {
         justify-content: center;
     }
@@ -162,6 +186,14 @@
     .footer__country {
         text-align: center;
         margin-top: 6px;
+    }
+    
+    .footer__dowload {
+        justify-content: center;
+    }
+
+    .footer__dowload-apps {
+        flex: unset;
     }
 
     .footer__copyright-security {

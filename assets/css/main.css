@@ -1361,6 +1361,10 @@ i.home-product-item__like-icon-fill {
     list-style: none;
 }
 
+.footer-item {
+    margin-left: 10px;
+}
+
 .footer-item__link {
     text-decoration: none;
     font-size: 1.2rem;
@@ -1419,21 +1423,12 @@ i.home-product-item__like-icon-fill {
     width: 120px;
 }
 
-.footer__banking-1 {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer__banking-2 {
-    width: 575%;
-}
-
 .footer__banking-img {
     box-shadow: 0 1px 1px rgba(0,0,0,.2);
     box-sizing: border-box;
-    padding: 4px;
     border-radius: 2px;
-    margin: 4px;
+    padding: 4px;
+    text-align: center;
 }
 
 .footer__cerf {
